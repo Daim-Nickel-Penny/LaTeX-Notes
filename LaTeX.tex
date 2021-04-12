@@ -1,31 +1,47 @@
-% \documentclass{article}
-% \usepackage[utf8]{inputenc}
+% At first is the PREAMBLE of the Document
+% Mention in preamble the :-
+%           1. Type Of Document
+%           2. Document Language
+%           3. Packages t be used Later
 
-% \title{Lorem Ipsum}
-% \author{DAIM KHAN}
-% \date{April 2021}
 
-% \begin{document}
+% Below is the document of article type.
+% The font is kept to 12pt [10pt is default]
+% The layout orientation is a4paper
+% utf8 is the encoding done
 
-% \maketitle
-
-% \section{Introduction}
-
-% \end{document}
-
-% \documentclass{article}
 \documentclass[12pt, a4paper ]{article}
 \usepackage[utf8]{inputenc}
 
+% Adding Other details
 \title{Lorem Ipsum}
 \author{DAIM KHAN}
+% For date you can enter of can use `\today` command too.
 \date{April 2021}
 
 
 \begin{document}
+
+%Above mentioned data can now be printed on document in Title
 \maketitle
+
+
+% Abstract
+
+\begin{abstract}
+
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
 
+\end{abstract}
+
+
+% TEXT FORMATTING
+%               1. For Bold-  \textbf{...}
+%               2. For Italic-  \textit{...}
+%               3. For underline-  \underline{...}
+%               4. Emph: it italicizes the selected text if rest                      text is normal and do vice-versa
+
+\newline
 Some of the \textbf{greatest}
 discoveries in \underline{science} 
 were made by \textbf{\textit{accident}}.
@@ -47,8 +63,68 @@ were made by accident.}
 
 
 
+% LISTS
 
 
+% Unordered List
+% To start a list- \begin{...} and to end a list- \end{...}
+
+\begin{itemize}
+  \item This is the first item.
+  \item This is the Second item.
+\end{itemize}
+
+
+
+% Ordered List
+% Same as Unordered, just instead of itemize we use enumerate 
+
+\begin{enumerate}
+  \item This is the 1 item.
+  \item This is the 2 item.
+  \item This is the 3 item.
+  \item This is the 4 item.
+\end{enumerate}
+
+
+% Some Maths
+Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined an nested to write expressions such as
+
+\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
+ 
+We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are placed on integrals using superscripts and subscripts:
+
+\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]
+
+Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
+
+Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+
+
+% FORMATTING
+
+\chapter{First Chapter}
+
+\section{Introduction}
+
+This is the first section.
+
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Donec ullamcorper, felis non sodales...
+
+\section{Second Section}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+
+\subsection{First Subsection}
+Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+
+\section*{Unnumbered Section}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem
 
 \end{document}
-
