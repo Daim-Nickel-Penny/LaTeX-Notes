@@ -24,7 +24,7 @@
 
 %Above mentioned data can now be printed on document in Title
 \maketitle
-
+\tableofcontents
 
 % Abstract
 
@@ -126,5 +126,58 @@ Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
 \section*{Unnumbered Section}
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
 Etiam lobortis facilisissem
+
+
+
+
+% TABLES
+
+
+% Simple Table
+
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9    
+\end{tabular}
+\end{center}
+
+
+%Table Formatting
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\ 
+ cell7 & cell8 & cell9 \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+% Advance Table
+
+Table \ref{table:data} is an example of referenced \LaTeX{} elements.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Table to test captions and labels}
+\label{table:data}
+\end{table}
+
 
 \end{document}
